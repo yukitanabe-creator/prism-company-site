@@ -5,12 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="株式会社プリズムは、不動産売買及び不動産コンサルティングを行う会社です。取引先企業様、一般のお客様、個人の売主様に向けて誠実な不動産サービスを提供します。"
+      content="株式会社プリズムは、不動産売買及び不動産コンサルティングを通じて、法人・一般のお客様・個人の売主様の意思決定を支援します。"
     >
+    <meta name="theme-color" content="#15181d">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="株式会社プリズム">
+    <meta property="og:title" content="株式会社プリズム | 不動産売買・不動産コンサルティング">
+    <meta
+      property="og:description"
+      content="複雑な不動産取引を、見通しのよい意思決定へ。情報と条件を丁寧に整理し、納得できる選択を支えます。"
+    >
+    <meta property="og:url" content="https://yukitanabe-creator.github.io/prism-company-site/">
+    <meta
+      property="og:image"
+      content="https://yukitanabe-creator.github.io/prism-company-site/assets/prism-og-2026.jpg"
+    >
+    <meta property="og:image:alt" content="株式会社プリズム。不動産の判断に、静かな確かさを。">
+    <meta property="og:image:width" content="1731">
+    <meta property="og:image:height" content="909">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="株式会社プリズム | 不動産の判断に、静かな確かさを。">
+    <meta
+      name="twitter:description"
+      content="不動産売買とコンサルティングを通じて、納得できる意思決定を支えます。"
+    >
+    <link rel="canonical" href="https://yukitanabe-creator.github.io/prism-company-site/">
     <title>株式会社プリズム | 不動産売買・不動産コンサルティング</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "株式会社プリズム",
+        "alternateName": "PRISM Real Estate",
+        "url": "https://yukitanabe-creator.github.io/prism-company-site/",
+        "description": "不動産売買及び不動産コンサルティングを行う会社です。"
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="株式会社プリズム ホーム">
         <span class="brand-mark" aria-hidden="true">P</span>
@@ -20,25 +56,36 @@
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="nav-toggle-line"></span>
-        <span class="sr-only">メニューを開く</span>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-nav-toggle
+      >
+        <span class="nav-toggle-line" aria-hidden="true"></span>
+        <span class="sr-only" data-nav-label>メニューを開く</span>
       </button>
 
-      <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#about">私たちについて</a>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション" data-nav>
+        <a href="#audience">ご相談いただける方</a>
         <a href="#services">事業内容</a>
+        <a href="#process">進め方</a>
         <a href="#company">会社概要</a>
-        <a class="nav-contact" href="#contact">お問い合わせ</a>
+        <a class="nav-contact" href="#contact">相談の準備をする</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
         <img
           class="hero-image"
-          src="assets/hero-residence.png"
-          alt="夕暮れの落ち着いた高級レジデンス外観"
+          src="assets/prism-hero-2026.jpg"
+          alt=""
+          width="1823"
+          height="863"
+          fetchpriority="high"
+          decoding="async"
         >
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
@@ -48,42 +95,152 @@
             <span>静かな確かさを。</span>
           </h1>
           <p class="hero-lead">
-            株式会社プリズムは、不動産売買及び不動産コンサルティングを通じて、
-            取引先企業様と個人の売主様に誠実な選択肢を提示します。
+            複雑な情報と条件を一つずつ整理し、見通しのよい意思決定へ。
+            株式会社プリズムは、不動産売買とコンサルティングを通じて、
+            お客様が納得して選べる道筋をつくります。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">お問い合わせ</a>
+            <a class="button button-primary" href="#contact">相談の準備をする</a>
             <a class="button button-secondary" href="#services">事業内容を見る</a>
           </div>
         </div>
-        <div class="hero-status" aria-label="公開準備状況">
+        <div class="hero-status" aria-label="開業予定">
           <span>Opening</span>
           <strong>2026.10</strong>
           <small>宅建業許可取得予定</small>
         </div>
       </section>
 
-      <section class="intro section" aria-labelledby="intro-title">
-        <div class="section-inner intro-grid">
-          <div>
-            <p class="section-kicker">Prism Standard</p>
-            <h2 id="intro-title">複雑な不動産取引を、見通しのよい意思決定へ。</h2>
+      <section class="intro section" id="audience" aria-labelledby="audience-title">
+        <div class="section-inner">
+          <div class="section-heading wide">
+            <p class="section-kicker">For Your Decision</p>
+            <h2 id="audience-title">立場の違いを越えて、同じ解像度で考える。</h2>
+            <p class="section-lead">
+              法人間取引から個人の売却相談まで。背景と目的を理解し、判断に必要な情報を過不足なく整えます。
+            </p>
           </div>
-          <p>
-            法人間取引を中心に、一般のお客様や個人の売主様からのご相談にも対応します。
-            価格、条件、スケジュール、関係者の意向を丁寧に整理し、
-            安心して進められる取引を支えます。
-          </p>
+          <div class="audience-grid">
+            <article class="audience-card">
+              <p class="card-label">Corporate</p>
+              <h3>取引先企業様</h3>
+              <p>事業判断に必要な条件、スケジュール、関係者の意向を整理し、円滑な取引を支えます。</p>
+            </article>
+            <article class="audience-card">
+              <p class="card-label">Private Client</p>
+              <h3>一般のお客様</h3>
+              <p>専門用語や選択肢をわかりやすく紐解き、疑問を残さず検討できるよう伴走します。</p>
+            </article>
+            <article class="audience-card">
+              <p class="card-label">Property Owner</p>
+              <h3>個人の売主様</h3>
+              <p>大切な資産を扱うからこそ、ご事情と希望を丁寧に伺い、納得できる進め方を考えます。</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section muted" id="about" aria-labelledby="about-title">
-        <div class="section-inner split">
-          <div class="section-heading">
-            <p class="section-kicker">About</p>
-            <h2 id="about-title">会社紹介</h2>
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="section-inner">
+          <div class="section-heading narrow">
+            <p class="section-kicker">Services</p>
+            <h2 id="services-title">事業内容</h2>
+            <p class="section-lead">売買の実務と、その前段にある意思決定の両方を支援します。</p>
           </div>
-          <div class="copy-stack">
+
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="service-number" aria-hidden="true">01</span>
+              <h3>不動産売買</h3>
+              <p>
+                売却・購入に向けた条件整理から進行、関係者間の調整まで。
+                取引の全体像を共有しながら、着実に前へ進めます。
+              </p>
+            </article>
+            <article class="service-card service-card-featured">
+              <span class="service-number" aria-hidden="true">02</span>
+              <h3>不動産コンサルティング</h3>
+              <p>
+                活用、保有、売却に関する課題を整理し、目的や状況に応じた
+                実務的な選択肢をご提案します。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process" aria-labelledby="process-title">
+        <div class="section-inner split">
+          <div class="process-visual">
+            <img
+              src="assets/prism-consultation-2026.jpg"
+              alt="資料を囲み、不動産について相談する様子"
+              width="1672"
+              height="941"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div>
+            <div class="section-heading">
+              <p class="section-kicker">Process</p>
+              <h2 id="process-title">ご相談の進め方</h2>
+            </div>
+            <ol class="process-list">
+              <li>
+                <span>01</span>
+                <div><h3>お話を伺う</h3><p>背景、目的、ご希望、現在感じている不安をお聞かせください。</p></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><h3>情報を整理する</h3><p>物件、条件、スケジュール、関係者など、判断材料を見える形に整えます。</p></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><h3>選択肢を考える</h3><p>一つの結論を急がず、目的に照らして現実的な選択肢を検討します。</p></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><h3>取引を進める</h3><p>合意した方針に沿って、必要な調整を重ねながら丁寧に進行します。</p></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section promise-section" aria-labelledby="promise-title">
+        <div class="section-inner">
+          <div class="section-heading wide centered">
+            <p class="section-kicker">Our Promise</p>
+            <h2 id="promise-title">プリズムが大切にする、3つの約束。</h2>
+          </div>
+          <div class="promise-grid">
+            <article>
+              <span aria-hidden="true">01</span>
+              <h3>透明であること</h3>
+              <p>わかっていることと確認が必要なことを分け、判断の根拠を明確にお伝えします。</p>
+            </article>
+            <article>
+              <span aria-hidden="true">02</span>
+              <h3>急がせないこと</h3>
+              <p>大切な意思決定だからこそ、選択肢を理解し、納得できる時間を尊重します。</p>
+            </article>
+            <article>
+              <span aria-hidden="true">03</span>
+              <h3>実務に落とすこと</h3>
+              <p>抽象的な助言で終わらせず、次に何をすべきかが見える提案を心がけます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="company" aria-labelledby="company-title">
+        <div class="section-inner split">
+          <div class="about-copy">
+            <div class="section-heading">
+              <p class="section-kicker">About Prism</p>
+              <h2 id="company-title">会社について</h2>
+            </div>
             <p>
               株式会社プリズムは、不動産売買及び不動産コンサルティングを行う会社です。
               不動産に関わる一つひとつの判断を、透明性のある情報と実務に沿った提案で支えます。
@@ -93,95 +250,74 @@
               丁寧なコミュニケーションを大切にしています。
             </p>
           </div>
+          <dl class="company-list" aria-label="会社概要">
+            <div><dt>会社名</dt><dd>株式会社プリズム</dd></div>
+            <div><dt>代表者</dt><dd>代表取締役　西川 徹</dd></div>
+            <div><dt>事業内容</dt><dd>不動産売買及び不動産コンサルティング</dd></div>
+            <div><dt>営業時間</dt><dd>9:30AM - 6:00PM</dd></div>
+            <div><dt>所在地</dt><dd>移転先確定後に掲載予定</dd></div>
+            <div><dt>電話・FAX</dt><dd>開通後に掲載予定</dd></div>
+            <div><dt>ドメイン</dt><dd>prism-re.co.jp</dd></div>
+          </dl>
         </div>
       </section>
 
-      <section class="section" id="services" aria-labelledby="services-title">
-        <div class="section-inner">
-          <div class="section-heading narrow">
-            <p class="section-kicker">Services</p>
-            <h2 id="services-title">事業内容</h2>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-card">
-              <span class="service-number">01</span>
-              <h3>不動産売買</h3>
-              <p>
-                取引条件の整理、売却・購入に向けた進行、関係者間の調整を行い、
-                円滑な不動産売買を支援します。
-              </p>
-            </article>
-            <article class="service-card">
-              <span class="service-number">02</span>
-              <h3>不動産コンサルティング</h3>
-              <p>
-                不動産の活用、保有、売却に関する課題を整理し、
-                目的に応じた実務的な選択肢をご提案します。
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section muted" id="company" aria-labelledby="company-title">
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
         <div class="section-inner split">
           <div class="section-heading">
-            <p class="section-kicker">Company</p>
-            <h2 id="company-title">会社概要</h2>
+            <p class="section-kicker">FAQ</p>
+            <h2 id="faq-title">よくあるご質問</h2>
           </div>
-          <dl class="company-list">
-            <div>
-              <dt>会社名</dt>
-              <dd>株式会社プリズム</dd>
-            </div>
-            <div>
-              <dt>代表者</dt>
-              <dd>代表取締役　西川 徹</dd>
-            </div>
-            <div>
-              <dt>事業内容</dt>
-              <dd>不動産売買及び不動産コンサルティング</dd>
-            </div>
-            <div>
-              <dt>営業時間</dt>
-              <dd>9:30AM - 6:00PM</dd>
-            </div>
-            <div>
-              <dt>所在地</dt>
-              <dd>移転先確定後に掲載予定</dd>
-            </div>
-            <div>
-              <dt>電話・FAX</dt>
-              <dd>開通後に掲載予定</dd>
-            </div>
-            <div>
-              <dt>ドメイン</dt>
-              <dd>prism-re.co.jp</dd>
-            </div>
-          </dl>
+          <div class="faq-list">
+            <details>
+              <summary>法人以外でも相談できますか？</summary>
+              <p>はい。一般のお客様、個人の売主様からのご相談にも対応します。</p>
+            </details>
+            <details>
+              <summary>売却するか決めていない段階でも相談できますか？</summary>
+              <p>はい。まずは目的や状況、選択肢を整理し、判断に必要な材料を一緒に確認します。</p>
+            </details>
+            <details>
+              <summary>どのような内容を相談できますか？</summary>
+              <p>不動産の売却・購入に加え、活用、保有、売却に関する課題整理についてご相談いただけます。</p>
+            </details>
+            <details>
+              <summary>問い合わせはいつからできますか？</summary>
+              <p>現在、2026年10月の開業に向けて受付窓口を準備しています。電話番号の開通後、このサイトでご案内します。</p>
+            </details>
+          </div>
         </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-inner">
           <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">お問い合わせ</h2>
-          <p>
-            お問い合わせは電話での受付を予定しています。
-            電話番号は開通後、こちらに掲載いたします。
+          <h2 id="contact-title">相談の準備をする</h2>
+          <p class="contact-lead">
+            物件の概要、現在の状況、ご希望の時期などを整理しておくと、開業後のご相談がスムーズです。
+            すべて決まっている必要はありません。
           </p>
-          <div class="contact-callout">
-            <span>電話番号</span>
-            <strong>開通後掲載予定</strong>
+          <div class="contact-callout" role="status">
+            <span>お問い合わせ窓口</span>
+            <strong>開通準備中</strong>
+            <small>2026年10月の開業に向け、電話受付の準備を進めています。</small>
           </div>
+          <p class="contact-note">電話番号は開通後、こちらに掲載いたします。</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span data-year></span> Prism Co., Ltd.</p>
-      <a href="#top">Back to top</a>
+      <div>
+        <a class="footer-brand" href="#top">株式会社プリズム</a>
+        <p>&copy; <span data-year></span> Prism Co., Ltd.</p>
+      </div>
+      <nav aria-label="フッターナビゲーション">
+        <a href="#services">事業内容</a>
+        <a href="#company">会社概要</a>
+        <a href="#faq">よくあるご質問</a>
+        <a href="#top">ページ上部へ</a>
+      </nav>
     </footer>
 
     <script src="script.js"></script>
