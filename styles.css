@@ -7,8 +7,8 @@
   --white: #ffffff;
   --text: #171918;
   --text-muted: #666b67;
-  --gold: #ad8950;
-  --gold-light: #d7bd91;
+  --brand: #998c87;
+  --brand-light: #c8bdb9;
   --line: rgba(18, 20, 19, 0.13);
   --line-light: rgba(255, 255, 255, 0.17);
   --focus: #1872d1;
@@ -45,7 +45,7 @@ body.menu-open {
 }
 
 ::selection {
-  background: var(--gold-light);
+  background: var(--brand-light);
   color: var(--ink);
 }
 
@@ -141,58 +141,33 @@ h3 {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 13px;
   flex: 0 0 auto;
 }
 
-.brand-mark {
+.brand-logo {
   position: relative;
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid currentColor;
-  font-family: Georgia, serif;
-  font-size: 0;
-  line-height: 1;
-  transform: rotate(45deg);
+  width: 58px;
+  height: 66px;
+  display: block;
 }
 
-.brand-mark::after {
+.brand-logo img {
   position: absolute;
-  inset: 4px;
-  border: 1px solid currentColor;
-  content: "";
-  opacity: 0.28;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 220ms ease;
 }
 
-.brand-mark::before {
-  position: absolute;
-  content: "P";
-  transform: rotate(-45deg);
-}
+.brand-logo-dark { opacity: 0; }
+.brand-logo-light { opacity: 1; }
 
-.brand-mark::before {
-  color: currentColor;
-  font-size: 19px;
-}
+.site-header.is-scrolled .brand-logo-dark,
+.site-header.is-open .brand-logo-dark { opacity: 1; }
 
-.brand-text {
-  display: grid;
-  gap: 1px;
-  font-size: 14px;
-  font-weight: 650;
-  letter-spacing: 0.07em;
-  line-height: 1.35;
-}
-
-.brand-text small {
-  font-family: Georgia, serif;
-  font-size: 9px;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  opacity: 0.67;
-}
+.site-header.is-scrolled .brand-logo-light,
+.site-header.is-open .brand-logo-light { opacity: 0; }
 
 .site-nav {
   display: flex;
@@ -245,7 +220,7 @@ h3 {
 }
 
 .nav-contact:hover {
-  background: var(--gold-light);
+  background: var(--brand-light);
   color: var(--ink);
 }
 
@@ -326,7 +301,7 @@ h3 {
 .section-kicker,
 .card-label {
   margin: 0 0 18px;
-  color: var(--gold);
+  color: var(--brand);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -391,7 +366,7 @@ h3 {
 .button:hover::after { transform: translateX(4px); }
 .button:hover { transform: translateY(-2px); }
 .button-primary { color: var(--ink); background: var(--white); }
-.button-primary:hover { background: var(--gold-light); }
+.button-primary:hover { background: var(--brand-light); }
 .button-secondary { color: var(--white); border-color: rgba(255, 255, 255, 0.42); }
 .button-secondary:hover { background: rgba(255, 255, 255, 0.1); border-color: var(--white); }
 
@@ -481,7 +456,7 @@ h3 {
   left: var(--gutter);
   width: min(24vw, 340px);
   height: 1px;
-  background: var(--gold);
+  background: var(--brand);
   content: "";
 }
 
@@ -503,7 +478,7 @@ h3 {
 .audience-card:last-child { border-right: 1px solid var(--line); }
 .audience-card:hover { color: var(--white); background: var(--ink-soft); }
 .audience-card:hover p { color: rgba(255, 255, 255, 0.69); }
-.audience-card:hover .card-label { color: var(--gold-light); }
+.audience-card:hover .card-label { color: var(--brand-light); }
 
 .audience-card h3 {
   margin: 56px 0 20px;
@@ -547,7 +522,7 @@ h3 {
   bottom: -100px;
   width: 250px;
   height: 250px;
-  border: 1px solid rgba(215, 189, 145, 0.24);
+  border: 1px solid rgba(200, 189, 185, 0.24);
   content: "";
   transform: rotate(45deg);
   transition: transform 600ms cubic-bezier(.2,.7,.2,1);
@@ -556,7 +531,7 @@ h3 {
 .service-card:hover::after { transform: rotate(70deg) scale(1.12); }
 
 .service-number {
-  color: var(--gold-light);
+  color: var(--brand-light);
   font-family: Georgia, serif;
   font-size: 13px;
 }
@@ -621,7 +596,7 @@ h3 {
 }
 
 .process-list > li > span {
-  color: var(--gold);
+  color: var(--brand);
   font-family: Georgia, serif;
   font-size: 12px;
 }
@@ -655,7 +630,7 @@ h3 {
 }
 
 .promise-grid span {
-  color: var(--gold);
+  color: var(--brand);
   font-family: Georgia, serif;
   font-size: 12px;
 }
@@ -684,7 +659,7 @@ h3 {
   right: 0;
   bottom: 0;
   width: 14vw;
-  background: linear-gradient(135deg, transparent 49.6%, rgba(173, 137, 80, 0.13) 50%, transparent 50.4%);
+  background: linear-gradient(135deg, transparent 49.6%, rgba(153, 140, 135, 0.13) 50%, transparent 50.4%);
   content: "";
   pointer-events: none;
 }
@@ -785,7 +760,7 @@ h3 {
   position: absolute;
   width: 500px;
   height: 500px;
-  border: 1px solid rgba(215, 189, 145, 0.14);
+  border: 1px solid rgba(200, 189, 185, 0.14);
   content: "";
   transform: rotate(45deg);
 }
@@ -817,7 +792,7 @@ h3 {
 }
 
 .contact-callout span {
-  color: var(--gold-light);
+  color: var(--brand-light);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -843,7 +818,8 @@ h3 {
 }
 
 .site-footer p { margin: 7px 0 0; }
-.footer-brand { color: var(--ink); font-size: 14px; font-weight: 700; letter-spacing: 0.06em; }
+.footer-brand { width: 74px; display: inline-flex; }
+.footer-brand img { width: 100%; height: auto; }
 .site-footer nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 26px; }
 .site-footer nav a { min-height: 44px; display: inline-flex; align-items: center; }
 .site-footer nav a:hover { color: var(--ink); }
@@ -875,7 +851,7 @@ h3 {
   :root { --gutter: 22px; --section-space: 88px; }
   .site-header { background: rgba(8, 12, 16, 0.36); }
   .site-header.is-scrolled, .site-header.is-open { background: rgba(252, 251, 248, 0.98); }
-  .brand-text { font-size: 13px; }
+  .brand-logo { width: 52px; height: 60px; }
   .nav-toggle { display: block; }
   .site-nav {
     position: fixed;
@@ -928,7 +904,7 @@ h3 {
 }
 
 @media (max-width: 520px) {
-  .brand-text small { display: none; }
+  .brand-logo { width: 48px; height: 56px; }
   .hero { min-height: 760px; }
   .hero h1 span { display: inline; }
   .hero-actions { display: grid; }
